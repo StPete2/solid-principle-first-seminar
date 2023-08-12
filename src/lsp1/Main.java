@@ -6,11 +6,13 @@ import lsp1.view.ShapeView;
 
 public class Main {
     public static void main(String[] args) {
-        Rectangle rectangle = new Square(5);
-        rectangle.setSideA(4);
-        rectangle.setSideB(5);
-        System.out.printf("In a rectangle side A = %d, side B = %d\n", rectangle.getSideA(), rectangle.getSideB());
+        Quadreliteral rectangle = new Rectangle(5, 4);
+        Quadreliteral square = new Square(5);
+        System.out.printf("In a rectangle side A = %s, side B = %s\n", rectangle.getSideA(), rectangle.getSideB());
+        System.out.printf("In a square side A = %s\n", square.getSideA());
         ShapeView view = new ShapeView(rectangle);
+        ShapeView view1 = new ShapeView(square);
         view.showArea();
+        view1.showArea();
     }
 }

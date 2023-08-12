@@ -1,19 +1,21 @@
 package lsp1.shape;
 
-public class Rectangle {
-    private int sideA;
-    private int sideB;
+import lsp1.Quadreliteral;
+
+public class Rectangle implements Quadreliteral {
+    private double sideA;
+    private double sideB;
 
     public Rectangle(int sideA, int sideB) {
         this.setSideA(sideA);
         this.setSideB(sideB);
     }
 
-    public int getSideA() {
+    public double getSideA() {
         return sideA;
     }
 
-    public int getSideB() {
+    public double getSideB() {
         return sideB;
     }
 
@@ -25,7 +27,7 @@ public class Rectangle {
         this.sideB = sideB;
     }
 
-    public int getArea() {
+    public double getArea() {
         return sideA * sideB;
     }
 }
