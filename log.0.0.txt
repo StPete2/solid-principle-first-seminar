@@ -14,3 +14,5 @@ INFO: Method main in model package started
 INFO: Method main in model package started
 авг 12, 2023 4:45:14 PM dip1.Main main
 INFO: Method main in model package started
+авг 14, 2023 8:28:33 AM dip1.Main main
+INFO: Method main in model package started
